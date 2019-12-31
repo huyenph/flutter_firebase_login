@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter_firebase_login/views/home_screen.dart';
+import 'package:flutter_firebase_login/views/login_screen.dart';
 import 'package:flutter_firebase_login/views/splash_screen.dart';
 import 'package:meta/meta.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -43,6 +44,11 @@ class MyApp extends StatelessWidget {
           if (state is Authenticated) {
             return HomeScreen(
               name: state.displayName,
+            );
+          }
+          if (state is Unauthenticated) {
+            return LoginScreen(
+              userRepository: _userRepository,
             );
           }
           return Container();
