@@ -51,7 +51,6 @@ class MyApp extends StatelessWidget {
               userRepository: _userRepository,
             );
           }
-          return Container();
         },
       ),
     );

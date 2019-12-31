@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase_login/widgets/login_form.dart';
 import 'package:meta/meta.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_firebase_login/blocs/login/login_blocs.dart';
+import 'package:flutter_firebase_login/blocs/blocs.dart';
 import 'package:flutter_firebase_login/repositories/user_repository.dart';
 
 class LoginScreen extends StatelessWidget {

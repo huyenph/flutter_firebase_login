@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase_login/widgets/create_account_button.dart';
 import 'package:flutter_firebase_login/widgets/google_login_button.dart';
 import 'package:flutter_firebase_login/widgets/login_button.dart';
-import 'package:meta/meta.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_firebase_login/blocs/blocs.dart';
 import 'package:flutter_firebase_login/repositories/user_repository.dart';
@@ -129,6 +129,12 @@ class _LoginFormState extends State<LoginForm> {
                           padding: const EdgeInsets.symmetric(vertical: 5.0),
                         ),
                         GoogleLoginButton(),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 5.0),
+                        ),
+                        CreateAccountButton(
+                          userRepository: _userRepository,
+                        ),
                       ],
                     ),
                   ),

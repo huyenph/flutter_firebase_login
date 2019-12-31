@@ -3,7 +3,7 @@ import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:flutter_firebase_login/data/validators.dart';
-import 'package:flutter_firebase_login/blocs/login/login_blocs.dart';
+import 'package:flutter_firebase_login/blocs/blocs.dart';
 import 'package:flutter_firebase_login/repositories/user_repository.dart';
 
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
