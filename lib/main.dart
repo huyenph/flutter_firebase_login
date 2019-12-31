@@ -5,7 +5,7 @@ import 'package:flutter_firebase_login/views/splash_screen.dart';
 import 'package:meta/meta.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_firebase_login/blocs/blocs.dart';
-import 'package:flutter_firebase_login/user_repository.dart';
+import 'package:flutter_firebase_login/repositories/user_repository.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
